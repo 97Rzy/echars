@@ -1,14 +1,17 @@
 <template>
   <div>
     <div class="echarts-box">
-      <h1>echars学习</h1>
+      <h2>树状图</h2>
       <init-echarts></init-echarts>
+      <h2>南丁格尔图</h2>
+      <echarts-pie></echarts-pie>
     </div>
   </div>
 </template>
 
 <script>
 import InitEcharts from '~/components/echarts/InitEcharts'
+import EchartsPie from '~/components/echarts_pie/EchartsPie'
 export default {
   name: 'index',
   data () {
@@ -17,7 +20,8 @@ export default {
     }
   },
   components: {
-    InitEcharts
+    InitEcharts,
+    EchartsPie
   }
 }
 </script>
@@ -27,8 +31,8 @@ export default {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  h1 {
-    margin-bottom: 20px;
+  h2 {
+    margin: 20px 0;
   }
 }
 </style>
