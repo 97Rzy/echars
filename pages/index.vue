@@ -28,7 +28,7 @@ export default {
   top: 50%;
   transform: translate(-50%, -50%);
   h1 {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 }
 </style>
